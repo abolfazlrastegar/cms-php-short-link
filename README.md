@@ -32,7 +32,7 @@ return 'test';
 });
 
 #dynamic route
-route("/test/api/create/(.+)/?", function ($id){
-return $id;
+route("/test/api/create/(.+)/?", function ($id, $data){
+return [$id, $data];
 });
 ```
