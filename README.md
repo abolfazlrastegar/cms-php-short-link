@@ -2,6 +2,7 @@
 > short links and url
 
 # run migration
+create database and table users, links
 > php database/migrations.php
 
 
