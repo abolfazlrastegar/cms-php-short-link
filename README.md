@@ -2,11 +2,12 @@
 > short links and url
 
 # run migration
-create database and table users, links
-> php database/migrations.php
+```bash
+ #Create Database and table users,links
+ php database/migrations.php
+```
 
-
-# exaple address api 
+# example address api 
 
 ``` bash
  #login and register
