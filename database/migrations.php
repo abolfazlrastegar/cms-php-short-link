@@ -1,9 +1,8 @@
 <?php
-$config = require('./config/database.php');
-$servername = $config['SERVERNAME'];
-$username = $config['USERNAME'];
-$password = $config['PASSWORD'];
-$dbname = $config['DBNAME'];
+$servername = $_ENV('DB_SERVERNAME');
+$username = $_ENV('DB_USERNAME');
+$password = $_ENV('DB_PASSWORD');
+$dbname = $_ENV('DB_DBNAME');
 
 try {
     $conn = new PDO("mysql:host=$servername", $username, $password);

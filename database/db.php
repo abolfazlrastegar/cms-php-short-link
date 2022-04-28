@@ -13,11 +13,10 @@ class db
 
     public function __construct()
     {
-        $config = require('./config/database.php');
-        $this->servername = $config['SERVERNAME'];
-        $this->username = $config['USERNAME'];
-        $this->password = $config['PASSWORD'];
-        $this->dbname = $config['DBNAME'];
+        $this->servername = $_ENV('DB_SERVERNAME');
+        $this->username = $_ENV('DB_USERNAME');
+        $this->password = $_ENV('DB_PASSWORD');
+        $this->dbname = $_ENV('DB_DBNAME');
         try {
             $conn = new PDO("mysql:host=$this->servername;dbname=$this->dbname", $this->username, $this->password);
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
