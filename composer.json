@@ -1,0 +1,25 @@
+{
+  "name": "vendor_name/test",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "abolfazlrastegar",
+      "email": "abolfazlrastegar1996@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "8.1.4",
+    "devcoder-xyz/php-router": "^1.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/",
+      "Database\\": "database/"
+    }
+  },
+  "require-dev": {
+    "ext-pdo": "*"
+  }
+}
